@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "386537729134",
+    "firebase_url": "https://purchasebook-f9c3b.firebaseio.com",
+    "project_id": "purchasebook-f9c3b",
+    "storage_bucket": "purchasebook-f9c3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386537729134:android:8a1b300b2f4e7718a44a7f",
+        "android_client_info": {
+          "package_name": "com.kd.purchasedairy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386537729134-5asn3egcu41fbeknrs9aqumfhjjpiegj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kd.purchasedairy",
+            "certificate_hash": "bf205a5d4161686156702af5fd7a6dda668a9bab"
+          }
+        },
+        {
+          "client_id": "386537729134-qeuon0qke7lfjarq1ehkaib0j3funjue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUh4Xtu3QDb5fOxGs5bnTHk85gA5Y2B7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386537729134-qeuon0qke7lfjarq1ehkaib0j3funjue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
