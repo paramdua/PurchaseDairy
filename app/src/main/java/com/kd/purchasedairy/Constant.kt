@@ -13,7 +13,10 @@ object Constant {
     const val PRODUCT_ID = "ProductId"
     const val SHOP_NAME = "name"
     const val SHOP_ADDRESS = "address"
+    const val SHOP_LAT = "lat"
+    const val SHOP_LNG = "lng"
     const val SHOP_ID = "ShopId"
+    const val SHOP_PHN = "phn"
 
     fun getShopRef():CollectionReference{
         return Firebase.firestore.collection("Shop")
