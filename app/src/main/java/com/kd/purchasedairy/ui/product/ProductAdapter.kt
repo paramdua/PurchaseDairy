@@ -1,4 +1,4 @@
-package com.kd.purchasedairy.ui.home
+package com.kd.purchasedairy.ui.product
 
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +18,13 @@ class ProductAdapter(var list: ArrayList<ProductModel>) :
             address.text = list.price.toString()
         }
     }
+
+    fun updateList(list: ArrayList<ProductModel>) {
+        this.list = list
+        notifyDataSetChanged()
+    }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v: View = LayoutInflater.from(parent.context)

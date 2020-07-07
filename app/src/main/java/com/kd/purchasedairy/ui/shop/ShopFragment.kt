@@ -1,4 +1,4 @@
-package com.kd.purchasedairy.ui.gallery
+package com.kd.purchasedairy.ui.shop
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,22 +10,18 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.kd.purchasedairy.R
 
-class GalleryFragment : Fragment() {
+class ShopFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
+
         val root = inflater.inflate(R.layout.fragment_gallery, container, false)
         val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 }
