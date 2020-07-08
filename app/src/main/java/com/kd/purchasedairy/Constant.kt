@@ -9,8 +9,10 @@ object Constant {
     const val SHOP = "Shop"
     const val TIMELINE = "Timeline"
     const val PRODUCT_NAME = "name"
+    const val PRODUCT_SPEC = "specification"
     const val PRODUCT_PRICE = "price"
     const val PRODUCT_ID = "ProductId"
+    const val TIMELINE_ID = "TimelineID"
     const val SHOP_NAME = "name"
     const val SHOP_ADDRESS = "address"
     const val SHOP_LAT = "lat"
@@ -20,6 +22,10 @@ object Constant {
 
     fun getShopRef():CollectionReference{
         return Firebase.firestore.collection("Shop")
+    }
+
+    fun getTimelineRef(): CollectionReference {
+        return Firebase.firestore.collection("TimeLine")
     }
 
     fun getProdRef(): CollectionReference {

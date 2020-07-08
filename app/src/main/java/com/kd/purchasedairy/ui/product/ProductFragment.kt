@@ -8,7 +8,6 @@ import android.view.*
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.constraintlayout.solver.widgets.ResolutionNode.REMOVED
 import androidx.fragment.app.Fragment
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.FirebaseFirestoreException
@@ -100,7 +99,7 @@ class ProductFragment : Fragment() {
 
     private fun insetData(name: String, price: String) {
         val value = hashMapOf(
-            Constant.PRODUCT_PRICE to price.toInt(),
+            Constant.PRODUCT_SPEC to price,
             Constant.PRODUCT_NAME to name,
             Constant.PRODUCT_ID to listProduct.size
         )

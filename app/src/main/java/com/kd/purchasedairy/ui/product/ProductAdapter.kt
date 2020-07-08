@@ -15,7 +15,7 @@ class ProductAdapter(var list: ArrayList<ProductModel>) :
         val address: TextView = itemView.address
         fun bind(list: ProductModel) {
             title.text = list.name
-            address.text = list.price.toString()
+            address.text = list.specification
         }
     }
 
